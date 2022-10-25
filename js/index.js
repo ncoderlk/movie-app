@@ -35,3 +35,13 @@ search_box.addEventListener("input", () => {
     }
   }, 10)
 })
+search_box.addEventListener("keydown", () => {
+  setTimeout(() => {
+    if (search_box.value == undefined || search_box.value == "") {
+      return
+    } else {
+      search_value = search_box.value
+      getData(search_value)
+    }
+  }, 10)
+})
