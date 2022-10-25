@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+:root {
+  --default-bg: #000;
+  --default-skin: #ff7f11;
+  --default-skin-1: #1b9aaa;
+}
+
+body {
+  background: var(--default-bg);
+  color: #fff;
+}
+
+nav {
+  width: 100%;
+  min-height: 12vh;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  background: var(--default-bg);
+  border-bottom: 1px solid var(--default-skin);
+}
+
+nav div.logo {
+  font-size: 25px;
+  padding: 20px;
+  font-weight: bolder;
+  color: var(--default-skin);
+}
+
+nav label {
+  padding: 20px;
+  text-align: center;
+}
+
+nav input {
+  width: 255px;
+}
+
+nav input:focus {
+  outline: none;
+}
+
+#search-result {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  display: block;
+}
+
+#search-result .contents .logo {
+  width: 180px;
+  text-align: center;
+  max-height: 200px;
+}
+
+#search-result .contents {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--default-skin);
+}
+
+#search-result .contents .text-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
