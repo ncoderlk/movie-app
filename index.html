@@ -6,28 +6,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>MovieAce</title>
 </head>
 
 <body>
-  <nav>
-    <div class="logo">MovieAce</div>
-    <label for="search-box">Search For The Movie:
-      <input type="text" name="search-box" id="search-box">
-    </label>
-  </nav>
-  <div class="search-result-container">
-    <div id="search-result">
-      <!-- Content1 -->
-      <!-- <div class="contents">
-        <img src="./images/a.jpg" class="logo">
-        <span class="text-content">
-          <span class="title">Batman War </span>
-          <span class="year">2022</span>
-        </span>
-      </div> -->
+
+  <div class="wrapper">
+    <!-- Logo -->
+    <nav>
+      <div class="logo">
+        <div class="container">
+          <p>Movie<span>Ace</span></p>
+        </div>
+        <div class="search-elm">
+          <h3>Search Movie:</h3>
+          <input type="text" class="form-control" placeholder="Enter the movie name..." id="movie-search-box"
+            onkeyup="findMovies()" onkeydown="findMovies()" onkeypress="findMovies()">
+          <div class="search-list hide-search-list" id="search-list">
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Logo ended -->
+    <!-- Search Box -->
+
+    <!-- Search Box ended -->
+    <!-- Result grid -->
+    <div class="container">
+      <div class="result-containe">
+        <div class="result-grid" id="result-grid">
+          <div class="text-content">
+            <div class="content">
+              <h1>Welcome to Movie<span>Ace</span></h1>
+              <p>Open Database of Movies</p>
+            </div>
+            <i class="fas fa-database"></i>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+
+
+
+
   <script src="./js/index.js"></script>
 </body>
 
